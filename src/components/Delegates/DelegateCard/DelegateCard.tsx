@@ -5,7 +5,19 @@ import styles from "./delegateCard.module.scss";
 import DelegateCardClient from "./DelegateCardClient";
 import { Delegate } from "@/app/api/delegates/delegate";
 
+<<<<<<< HEAD:src/components/Delegates/DelegateCard/DelegateCard.tsx
 export default function DelegateCard({ delegate }: { delegate: Delegate }) {
+=======
+export default async function DelegateCard({
+  delegate,
+  fetchBalanceForDirectDelegation,
+  fetchVotingPowerForSubdelegation,
+  checkIfDelegatingToProxy,
+  fetchCurrentDelegatees,
+  getProxyAddress,
+  fetchDirectDelegatee,
+}) {
+>>>>>>> origin/main:src/components/Delegates/DelegateCard/DelegateCard.jsx
   return (
     <VStack className={styles.container}>
       <VStack className={styles.card}>
